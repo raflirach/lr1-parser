@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="GUIFrame">
+		<title>LR(1) Parser</title>
+		<centered>1</centered>
+		<icon>C:\Users\rafli\Pictures\logo.png</icon>
+		<size>800,600</size>
+		<id_arg>0</id_arg>
+		<object class="wxPanel" name="ID_PANEL1" variable="Panel1" member="yes">
+			<size>800,600</size>
+			<bg>#E4FCEC</bg>
+			<object class="wxGrid" name="ID_GRID1" variable="Grid1" member="yes">
+				<cols>3</cols>
+				<rows>20</rows>
+				<readonly>1</readonly>
+				<labelcolwidth>1</labelcolwidth>
+				<defaultcolsize>150</defaultcolsize>
+				<collabels>
+					<item>STACK</item>
+					<item>STRING</item>
+					<item>ACTION</item>
+				</collabels>
+				<pos>320,288</pos>
+				<size>469,264</size>
+				<style>wxVSCROLL</style>
+				<handler function="OnGrid1CellLeftClick1" entry="EVT_CMD_GRID_CELL_LEFT_CLICK" />
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL1" variable="TextInput" member="yes">
+				<value>abb</value>
+				<pos>450,160</pos>
+				<size>136,26</size>
+				<focused>1</focused>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Arial</face>
+				</font>
+			</object>
+			<object class="wxButton" name="ID_BUTTON1" variable="Button1" member="yes">
+				<label>Check String</label>
+				<pos>320,200</pos>
+				<size>160,34</size>
+				<font>
+					<size>12</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+				</font>
+				<handler function="OnButton1Click" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT1" variable="StaticText1" member="yes">
+				<label>Input String :</label>
+				<pos>320,160</pos>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+				</font>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL2" variable="txtStatus" member="yes">
+				<value>NOT CHECKED</value>
+				<pos>320,248</pos>
+				<size>168,24</size>
+				<bg>#FF0000</bg>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Arial</face>
+				</font>
+				<style>wxTE_READONLY|wxTE_CENTRE|wxNO_BORDER</style>
+			</object>
+			<object class="wxGrid" name="ID_GRID2" variable="Grid2" member="yes">
+				<cols>5</cols>
+				<rows>10</rows>
+				<readonly>1</readonly>
+				<labelcolwidth>30</labelcolwidth>
+				<defaultrowsize>46</defaultrowsize>
+				<defaultcolsize>50</defaultcolsize>
+				<collabels>
+					<item>a</item>
+					<item>b</item>
+					<item>$</item>
+					<item>S</item>
+					<item>A</item>
+				</collabels>
+				<rowlabels>
+					<item>i0</item>
+					<item>i1</item>
+					<item>i2</item>
+					<item>i3</item>
+					<item>i4</item>
+					<item>i5</item>
+					<item>i6</item>
+					<item>i7</item>
+					<item>i8</item>
+					<item>i9</item>
+				</rowlabels>
+				<celltext>
+					<item>s3</item>
+					<item>s4</item>
+					<item></item>
+					<item>1</item>
+					<item>2</item>
+					<item></item>
+					<item></item>
+					<item>ACC</item>
+					<item></item>
+					<item></item>
+					<item>s6</item>
+					<item>s7</item>
+					<item></item>
+					<item></item>
+					<item>5</item>
+					<item>s3</item>
+					<item>s4</item>
+					<item></item>
+					<item></item>
+					<item>8</item>
+					<item>r3</item>
+					<item>r3</item>
+					<item></item>
+					<item></item>
+					<item></item>
+					<item></item>
+					<item></item>
+					<item>r1</item>
+					<item></item>
+					<item></item>
+					<item>s6</item>
+					<item>s7</item>
+					<item></item>
+					<item></item>
+					<item>9</item>
+					<item></item>
+					<item></item>
+					<item>r3</item>
+					<item></item>
+					<item></item>
+					<item>r2</item>
+					<item>r2</item>
+					<item></item>
+					<item></item>
+					<item></item>
+					<item></item>
+					<item></item>
+					<item>r2</item>
+				</celltext>
+				<pos>16,48</pos>
+				<size>285,497</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+				</font>
+			</object>
+			<object class="wxRichTextCtrl" name="ID_RICHTEXTCTRL1" variable="RichTextCtrl1" member="yes">
+				<value>[1] : S -&gt; A A&#x0A;[2] : a -&gt; a A&#x0A;[3] : a -&gt; b</value>
+				<font>
+					<size>12</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Arial</face>
+				</font>
+				<pos>320,48</pos>
+				<size>456,104</size>
+				<enabled>0</enabled>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT2" variable="StaticText2" member="yes">
+				<label>PARSER TABLE</label>
+				<pos>16,16</pos>
+				<size>82,13</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+				</font>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT3" variable="StaticText3" member="yes">
+				<label>RULE</label>
+				<pos>320,16</pos>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+				</font>
+			</object>
+		</object>
+		<object class="wxMenuBar" variable="MenuBar1" member="no">
+			<object class="wxMenu" variable="Menu1" member="no">
+				<label>&amp;File</label>
+				<object class="wxMenuItem" name="ID_MENUITEM1" variable="MenuItem1" member="no">
+					<label>Quit</label>
+					<accel>Alt-F4</accel>
+					<help>Quit the application</help>
+					<handler function="OnQuit" entry="EVT_MENU" />
+				</object>
+			</object>
+			<object class="wxMenu" variable="Menu2" member="no">
+				<label>Help</label>
+				<object class="wxMenuItem" name="idMenuAbout" variable="MenuItem2" member="no">
+					<label>About</label>
+					<accel>F1</accel>
+					<help>Show info about this application</help>
+					<handler function="OnAbout" entry="EVT_MENU" />
+				</object>
+			</object>
+		</object>
+		<object class="wxStatusBar" name="ID_STATUSBAR1" variable="StatusBar1" member="yes">
+			<fields>1</fields>
+			<widths>-1</widths>
+			<styles>wxSB_NORMAL</styles>
+		</object>
+	</object>
+</wxsmith>
